@@ -15,7 +15,7 @@ const createDate = (dates, posisi) => {
     for (let i=0; i<dates.length; i++){
       hasilSecond[i] = ((Date.parse(dates[i]))/1000).toString();
     }
-    return (hasilSecond.sort()).join(" - ");
+    return (hasilSecond.sort()).join("-");
   }
   else {
     return (((Date.parse(dates[posisi]))/1000).toString());
